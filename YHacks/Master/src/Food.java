@@ -3,27 +3,30 @@
  */
 public class Food {
     private String[] data;
-    private int id;
-    private String name;
-    private double calories;
 
     public Food(String[] data) {
         this.data = data;
-        this.id = Integer.parseInt(data[0]);
-        this.name = data[1];
-        this.calories = Double.valueOf(data[2]);
     }
 
     public String[] getData() {
         return data;
     }
-    public int getID() {
-        return id;
+    public String getID() {
+        return data[0];
     }
     public String getName() {
-        return name;
+        return data[1];
     }
     public double getCalories() {
-        return calories;
+        return Double.valueOf(data[2]);
+    }
+    public double getProtein() {
+        return Double.valueOf(data[3]);
+    }
+    public double getFat() {
+        return Double.valueOf(data[4]);
+    }
+    public double getCarbs() {
+        return Double.valueOf(data[5]);
     }
 }
