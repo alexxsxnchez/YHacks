@@ -1,3 +1,6 @@
+import java.lang.Math;
+import java.util.ArrayList;
+
 /**
  * Created by Michellew on 2016-11-12.
  */
@@ -60,5 +63,14 @@ public class Calculations {
         }
         return bmr;
     }
+
+    public double percentError (double expected_value, double actual_value) {
+        return (Math.abs((expected_value - actual_value) / expected_value));
+    }
+
+    public double checkFood (ArrayList<Food> foods) {
+        foods.get(0).
+    }
+
 
 }
