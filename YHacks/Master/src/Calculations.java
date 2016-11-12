@@ -1,12 +1,16 @@
 import java.lang.Math;
 import java.util.ArrayList;
+import java.util.*;
 
 /**
  * Created by Michellew on 2016-11-12.
  */
 public class Calculations {
+    Data data;
 
-    public Calculations() {
+    public Calculations(Data data) {
+        this.data = data;
+
         //testing
         boolean female = true;
         int weight = 95;
@@ -73,4 +77,11 @@ public class Calculations {
     }
 
 
+    private ArrayList<Food> calculateBestCombo() {
+        for(Food food : data.getData()) {
+
+
+        }
+        return null;
+    }
 }
