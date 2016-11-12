@@ -1,9 +1,12 @@
 import java.io.*;
 
+
+//THIS PROGRAM IS NOW NOT TO BE USED ANY LONGER
+
 public class Main {
 
     public static void main(String[] args) {
-        String fileIn = "src/ABBREV.txt";
+        /*String fileIn = "src/ABBREV.txt";
         String fileOut = "src/data.txt";
         BufferedReader br;
         BufferedWriter bw;
@@ -25,13 +28,38 @@ public class Main {
         String line;
         try {
             while ((line = br.readLine()) != null) {
-                line = line.
-                line = line.replaceAll("\\s+", " ");
-                line = line.substring(1);
-                String[] values = line.split("\\s");
-                values =
-                bw.write(line);
+                line = line.replaceAll("~", "");
+                line = line.trim();
+                String[] values = line.split("\\^");
+                for (int i = 0; i < values.length; i++) {
+                    switch(i) {
+                        case 0:
+                        case 1:
+                        case 3:
+                        case 4:
+                        case 5:
+                        case 7:
+                        case 8:
+                        case 9:
+                        case 10:
+                        case 11:
+                        case 12:
+                        case 14:
+                        case 15:
+                        case 16:
+                        case 20:
+                        case 25:
+                        case 31:
+                        case 32:
+                        case 40:
+                        case 42:
+                        case 43:
+                        case 47:
+                            bw.write(values[i] + "_");
+                    }
+                }
                 bw.newLine();
+
             }
             br.close();
             bw.close();
@@ -40,7 +68,7 @@ public class Main {
             e.printStackTrace();
             return;
         }
-
+*/
     }
 
 }
